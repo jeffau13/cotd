@@ -7,7 +7,6 @@ export default class Order extends Component {
     const isAvailable = fish && fish.status === 'available';
     //make sure fish is loaded before continuing
     if (!fish) return null;
-
     if (!isAvailable) {
       return (
         <li key={key}>
