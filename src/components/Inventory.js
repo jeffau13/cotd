@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AddFishForm from './AddFishForm';
 import EditFishForm from './EditFishForm';
-import Fish from './Fish';
+
 export default class Inventory extends Component {
   render() {
     return (
