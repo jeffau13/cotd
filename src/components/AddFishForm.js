@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 export default class AddFishForm extends Component {
   nameRef = React.createRef();
   priceRef = React.createRef();
@@ -7,6 +7,9 @@ export default class AddFishForm extends Component {
   descRef = React.createRef();
   imageRef = React.createRef();
 
+  static propTypes = {
+    addFish: PropTypes.func
+  };
   createFish = event => {
     event.preventDefault();
     const fish = {
